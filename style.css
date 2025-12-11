@@ -1,0 +1,80 @@
+body {
+  background: #0b0f19;
+  color: #e3e7f1;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.7rem;
+  margin-bottom: 10px;
+  color: #7ab6ff;
+  text-shadow: 0 0 15px #1a6dff;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 30px;
+  box-shadow: 0 0 25px rgba(0, 115, 255, 0.25);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+select {
+  width: 90%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  background: #141a29;
+  color: white;
+  font-size: 1rem;
+}
+
+button {
+  width: 90%;
+  margin: 8px 0;
+  padding: 12px;
+  background: #1a6dff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #3b8aff;
+  transform: scale(1.03);
+}
+
+.results {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(200, 225, 255, 0.07);
+  border-radius: 15px;
+  min-height: 120px;
+  font-size: 1.2rem;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; translate: 0 10px }
+  to   { opacity: 1; translate: 0 0 }
+}
