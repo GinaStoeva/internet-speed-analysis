@@ -1,42 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Internet Speed Analysis Project</title>
-    <style>
-        body { font-family: Arial; padding: 40px; background: #f7f7f7; }
-        h1 { color: #003366; }
-        .card {
-            background: white;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px #ccc;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Internet Speed Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<h1>🌍 Internet Speed Analysis (2023-2024)</h1>
-<p>This website presents my STEAM project analyzing worldwide internet speeds using Java.</p>
+  <div class="container">
+    <h1>🌐 Global Internet Speed Analyzer</h1>
+    <p class="subtitle">Explore digital inequality, growth, and connectivity trends around the world.</p>
 
-<div class="card">
-    <h2>📌 Methods in My Java Program</h2>
-    <ul>
-        <li>Region with the highest average 2024 speed</li>
-        <li>Countries with biggest speed improvement (2023 → 2024)</li>
-        <li>Digital Inequality Index</li>
-    </ul>
-</div>
+    <div class="card">
+      <label for="regionSelect">Choose a Region:</label>
+      <select id="regionSelect"></select>
 
-<div class="card">
-    <h2>📄 View My Java Code</h2>
-    <a href="MyProgram.java">Click here to see the full Java source code</a>
-</div>
+      <button onclick="runHighestLowest()">Highest vs Lowest Speed</button>
+      <button onclick="runImprovement()">Biggest Improvement</button>
+      <button onclick="runInequality()">Digital Inequality Index</button>
+    </div>
 
-<div class="card">
-    <h2>📊 Dataset</h2>
-    <a href="data.csv">Download dataset (CSV)</a>
-</div>
+    <div id="results" class="results"></div>
+  </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
+
